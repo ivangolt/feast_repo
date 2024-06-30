@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "feast-repo"
+version = "0.1.0"
+description = ""
+authors = ["ivan golt <102701882+ivangolt@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "feast_repo"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+polars = "^0.20.31"
+pandas = "^2.2.2"
+feast = "^0.39.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
