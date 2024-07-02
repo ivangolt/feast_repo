@@ -10,7 +10,8 @@ packages = [{include = "feast_repo"}]
 python = "^3.11"
 polars = "^0.20.31"
 pandas = "^2.2.2"
-feast = "^0.39.0"
+feast = {extras = ["gcp"], version = "^0.39.0"}
+nltk = "^3.8.1"
 
 
 [tool.poetry.group.dev.dependencies]
